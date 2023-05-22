@@ -18,7 +18,7 @@ const useFetch = (url) => {
       setLoading(false);
     };
     fetchData();
-  }, [url]);
+  }, [url]);   // [url] will update filters immediately without hitting search (submit) button
 
   const reFetch = async () => {
     setLoading(true);
