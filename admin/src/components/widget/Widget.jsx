@@ -9,8 +9,8 @@ const Widget = ({ type }) => {
   let data;
 
   //temporary
-  const amount = 100;
-  const diff = 20;
+  const amount = 860000;
+  const diff = 17;
 
   switch (type) {
     case "user":
@@ -79,23 +79,23 @@ const Widget = ({ type }) => {
   }
 
   return (
-    <div className="widget">
-      <div className="left">
-        <span className="title">{data.title}</span>
-        <span className="counter">
-          {data.isMoney && "$"} {amount}
-        </span>
-        <span className="link">{data.link}</span>
-      </div>
-      <div className="right">
-        <div className="percentage positive">
-          <KeyboardArrowUpIcon />
-          {diff} %
-        </div>
-        {data.icon}
-      </div>
-    </div>
-  );
+		<div className="widget">
+			<div className="left">
+				<span className="title">{data.title}</span>
+				<span className="counter">
+					{data.isMoney && "₹"} {amount}
+				</span>
+				<span className="link">{data.link}</span>
+			</div>
+			<div className="right">
+				<div className="percentage positive">
+					<KeyboardArrowUpIcon />
+					{diff} %
+				</div>
+				{data.icon}
+			</div>
+		</div>
+	);
 };
 
 export default Widget;

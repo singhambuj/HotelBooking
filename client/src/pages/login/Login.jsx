@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import "./login.css";
 
+// import Footer from "../../components/footer/Footer";
+
 const Login = () => {
   const [credentials, setCredentials] = useState({
     username: undefined,
@@ -32,29 +34,29 @@ const Login = () => {
 
 
   return (
-    <div className="login">
-      <div className="lContainer">
-        <input
-          type="text"
-          placeholder="username"
-          id="username"
-          onChange={handleChange}
-          className="lInput"
-        />
-        <input
-          type="password"
-          placeholder="password"
-          id="password"
-          onChange={handleChange}
-          className="lInput"
-        />
-        <button disabled={loading} onClick={handleClick} className="lButton">
-          Login
-        </button>
-        {error && <span>{error.message}</span>}
-      </div>
-    </div>
-  );
+		<div className="login">
+			<div className="lContainer">
+				<input
+					type="text"
+					placeholder="username"
+					id="username"
+					onChange={handleChange}
+					className="lInput"
+				/>
+				<input
+					type="password"
+					placeholder="password"
+					id="password"
+					onChange={handleChange}
+					className="lInput"
+				/>
+				<button disabled={loading} onClick={handleClick} className="lButton">
+					Login
+				</button>
+				{error && <span>{error.message}</span>}
+			</div>
+		</div>
+	);
 };
 
 export default Login;

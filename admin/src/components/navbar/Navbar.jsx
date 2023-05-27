@@ -13,48 +13,48 @@ const Navbar = () => {
   const { dispatch } = useContext(DarkModeContext);
 
   return (
-    <div className="navbar">
-      <div className="wrapper">
-        <div className="search">
-          <input type="text" placeholder="Search..." />
-          <SearchOutlinedIcon />
-        </div>
-        <div className="items">
-          <div className="item">
-            <LanguageOutlinedIcon className="icon" />
-            English
-          </div>
-          <div className="item">
-            <DarkModeOutlinedIcon
-              className="icon"
-              onClick={() => dispatch({ type: "TOGGLE" })}
-            />
-          </div>
-          <div className="item">
-            <FullscreenExitOutlinedIcon className="icon" />
-          </div>
-          <div className="item">
-            <NotificationsNoneOutlinedIcon className="icon" />
-            <div className="counter">1</div>
-          </div>
-          <div className="item">
-            <ChatBubbleOutlineOutlinedIcon className="icon" />
-            <div className="counter">2</div>
-          </div>
-          <div className="item">
-            <ListOutlinedIcon className="icon" />
-          </div>
-          <div className="item">
-            <img
-              src="https://images.pexels.com/photos/941693/pexels-photo-941693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-              alt=""
-              className="avatar"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+		<div className="navbar">
+			<div className="wrapper">
+				<div className="search">
+					<input type="text" placeholder="Search..." />
+					<SearchOutlinedIcon />
+				</div>
+				<div className="items">
+					<div className="item">
+						<LanguageOutlinedIcon className="icon" />
+						English
+					</div>
+					<div className="item">
+						<DarkModeOutlinedIcon
+							className="icon"
+							onClick={() => dispatch({ type: "TOGGLE" })}
+						/>
+					</div>
+					<div className="item">
+						<FullscreenExitOutlinedIcon className="icon" />
+					</div>
+					<div className="item">
+						<NotificationsNoneOutlinedIcon className="icon" />
+						<div className="counter">47</div>
+					</div>
+					<div className="item">
+						<ChatBubbleOutlineOutlinedIcon className="icon" />
+						<div className="counter">13</div>
+					</div>
+					<div className="item">
+						<ListOutlinedIcon className="icon" />
+					</div>
+					<div className="item">
+						<img
+							src="https://avatars.githubusercontent.com/u/59581226?s=400&u=bee219d6a4788a1388a2e91828e98e9e7ac8fda1&v=4"
+							alt=""
+							className="avatar"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Navbar;
